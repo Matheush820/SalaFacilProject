@@ -1,0 +1,96 @@
+/* Estilos do contêiner principal */
+.enter-usuario-container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Preenche a altura da tela */
+    background: linear-gradient(to right, #005b82, #007396); /* Fundo gradiente */
+}
+
+/* Contêiner do formulário de login */
+.login-container {
+    background-color: white; /* Fundo branco para contraste */
+    padding: 40px;
+    border-radius: 20px; /* Bordas arredondadas */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    width: 400px; /* Largura fixa */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Título do formulário */
+.login-title {
+    color: #007bff; /* Azul para o título */
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+/* Mensagem de erro */
+.error-message {
+    color: red;
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Wrapper de input */
+.input-wrapper {
+    margin-bottom: 20px;
+    text-align: left; /* Alinha os textos à esquerda */
+}
+
+.input-wrapper label {
+    font-weight: bold; /* Deixa o texto mais destacado */
+}
+
+.input-wrapper input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Bordas arredondadas */
+    width: 100%; /* Ocupa toda a largura */
+    font-size: 16px;
+    transition: border-color 0.3s ease-in-out; /* Transição suave para a borda */
+}
+
+/* Estilo para campos com erro */
+.input-error {
+    border-color: #ff4d4f; /* Cor de borda vermelha para erro */
+}
+
+/* Botão de login */
+.submit-button {
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 10px; /* Bordas arredondadas */
+    cursor: pointer;
+    width: 100%; /* Ocupa toda a largura */
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s; /* Animações suaves */
+}
+
+.submit-button:hover {
+    background-color: #0056b3; /* Muda a cor ao passar o mouse */
+    transform: translateY(-2px); /* Levanta o botão levemente */
+}
+
+/* Links para senha e cadastro */
+.links-container {
+    display: flex;
+    justify-content: space-between; /* Espaça os links */
+    margin-top: 15px;
+}
+
+.forgot-password-link, .signup-link {
+    color: #007bff; /* Azul para os links */
+    text-decoration: none; /* Remove o sublinhado */
+    transition: color 0.3s; /* Animação suave para a cor */
+}
+
+.forgot-password-link:hover, .signup-link:hover {
+    color: #0056b3; /* Muda a cor ao passar o mouse */
+}
+
+.signup-link {
+    margin: 15px;
+}

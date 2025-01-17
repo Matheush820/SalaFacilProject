@@ -1,0 +1,131 @@
+.verificar-salas {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background-color: #f8f9fa; /* Cor de fundo mais clara */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #007bff; /* Cor do título */
+}
+
+.reservas-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.reserva-card {
+  background-color: #ffffff; /* Fundo branco para os cards */
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  width: 300px; /* Largura fixa para cards */
+  transition: transform 0.2s, box-shadow 0.2s; /* Transição suave */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column; /* Layout vertical */
+}
+
+.reserva-card:hover {
+  transform: scale(1.03); /* Efeito de hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Aumenta a sombra ao passar o mouse */
+}
+
+.sala-image {
+  width: 100%;
+  height: 200px; /* Altura fixa para imagens */
+  object-fit: cover; /* Preencher sem distorcer */
+  transition: transform 0.2s; /* Transição suave para a imagem */
+}
+
+.reserva-card:hover .sala-image {
+  transform: scale(1.05); /* Aumenta a imagem ao passar o mouse */
+}
+
+.reserva-info {
+  padding: 15px;
+  flex-grow: 1; /* Faz o espaço do card ser utilizado */
+}
+
+h2 {
+  font-size: 1.6em;
+  margin: 10px 0;
+  text-align: center;
+  color: #343a40; /* Cor do nome */
+}
+
+p {
+  margin: 5px 0;
+  color: #6c757d; /* Cor mais suave para os textos */
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s; /* Efeito ao passar o mouse */
+}
+
+.btn-editar {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-editar:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px); /* Leve elevação no hover */
+}
+
+.btn-excluir {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn-excluir:hover {
+  background-color: #c82333;
+  transform: translateY(-2px); /* Leve elevação no hover */
+}
+
+.btn-agendar {
+  display: block;
+  margin: 20px auto;
+  padding: 15px;
+  background-color: #28a745;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; /* Efeito ao passar o mouse */
+}
+
+.btn-agendar:hover {
+  background-color: #218838;
+  transform: translateY(-2px); /* Leve elevação no hover */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .reservas-container {
+    flex-direction: column; /* Em telas menores, colocar os cards em coluna */
+    align-items: center;
+  }
+
+  .reserva-card {
+    width: 90%; /* Fazer o card ocupar 90% da largura da tela */
+  }
+}

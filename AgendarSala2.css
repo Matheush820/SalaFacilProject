@@ -1,0 +1,130 @@
+.agendar-sala-container {
+  background: linear-gradient(to bottom, #0076a8, #0362c2);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  color: #ffffff;
+  padding: 20px;
+  border: 2px solid #005f7e; /* Borda */
+  max-width: 800px; /* Largura máxima */
+  width: 100%;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.agendar-sala-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.agendar-sala-title {
+  font-size: 2.1em;
+  font-weight: 700;
+  margin: 0;
+  color: white;
+}
+
+.curso-warning {
+  background-color: #e7f3fe; /* Azul claro */
+  color: #31708f; /* Azul escuro */
+  border: 1px solid #bcdff1; /* Borda azul clara */
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: bold;
+  margin: 10px 0;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+.back-button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.voltar-button:hover {
+  background-color: #ae3527;
+}
+
+.agendar-sala-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+}
+
+.agendar-sala-image-container {
+  background-color: white;
+  border: 2px solid #005f7e;
+  padding: 10px;
+  margin: 20px 0;
+}
+
+.agendar-sala-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+.agendar-sala-details {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.agendar-sala-indisponibilidade {
+  background-color: rgba(255, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.indisponibilidade-warning {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.toggle-button {
+  background: none;
+  border: none;
+  color: #0076a8;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.agendar-sala-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.agendar-sala-select,
+.agendar-sala-input {
+  padding: 10px;
+  border: 2px solid #0076a8;
+  font-size: 1em;
+}
+
+.agendar-sala-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.agendar-sala-button:hover {
+  background-color: #218838; /* Hover para o botão */
+}

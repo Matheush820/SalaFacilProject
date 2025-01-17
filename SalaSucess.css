@@ -1,0 +1,63 @@
+.sucess-room-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #2196F3, #21CBF3); /* Gradiente azul */
+  color: white; 
+  text-align: center; 
+  padding: 20px;
+  border-radius: 15px; 
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2); 
+  position: relative; /* Para o posicionamento da forma decorativa */
+  overflow: hidden; /* Para ocultar qualquer parte da forma que saia do contêiner */
+}
+
+.sucess-room-title {
+  font-size: 3rem; 
+  margin-bottom: 20px; 
+  font-weight: bold; 
+}
+
+.sucess-room-icon {
+  color: #fff; 
+  margin-bottom: 20px; 
+}
+
+.sucess-room-message {
+  font-size: 1.5rem; 
+  margin-bottom: 30px; 
+  font-style: italic; 
+}
+
+.sucess-room-button {
+  padding: 15px 30px; 
+  font-size: 1.2rem; 
+  color: white; 
+  background-color: #1976D2; /* Azul escuro para o botão */
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: background-color 0.3s, transform 0.2s; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+}
+
+.sucess-room-button:hover {
+  background-color: #0D47A1; /* Azul mais escuro ao passar o mouse */
+  transform: scale(1.05); 
+}
+
+/* Forma decorativa */
+.decorative-shape {
+  position: absolute; /* Para posicionar a forma */
+  width: 300px; /* Largura da forma */
+  height: 300px; /* Altura da forma */
+  background-color: rgba(255, 255, 255, 0.1); /* Branco semi-transparente */
+  border-radius: 50%; /* Forma circular */
+  bottom: -100px; /* Para posicionar abaixo do contêiner */
+  left: 50%; /* Centraliza horizontalmente */
+  transform: translateX(-50%); /* Ajusta o centro */
+  filter: blur(60px); /* Desfoque para suavizar */
+  z-index: 0; /* Coloca atrás do conteúdo */
+}

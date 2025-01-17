@@ -1,0 +1,143 @@
+/* Estilização da página de login */
+.login-page {
+    display: flex;
+    height: 100vh; /* Altura total da tela */
+    background-color: #f0f0f0; /* Cor de fundo */
+}
+
+/* Estilização do lado esquerdo da página de login */
+.login-left {
+    flex: 1; /* Ocupa 50% da largura da tela */
+    display: flex;
+    flex-direction: column; /* Organiza o conteúdo verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #ffffff; /* Cor de fundo */
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    transition: transform 0.3s; /* Transição suave para transformação */
+}
+
+.login-button {
+    margin: 15px;
+    padding: 10px 0; /* Ajuste o padding conforme necessário */
+    background-color: #007396; /* Cor de fundo do botão */
+    color: #ffffff; /* Cor do texto */
+    border: none; /* Sem borda */
+    border-radius: 20px; /* Borda arredondada */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+    cursor: pointer; /* Cursor em forma de mão */
+    width: 100px; /* Ocupa 100% da largura */
+    max-width: 200px; /* Largura máxima */
+    text-align: center; /* Centraliza o texto */
+    transition: background-color 0.3s, transform 0.3s; /* Transições suaves */
+}
+
+.login-button:hover {
+    background-color: #005f73; /* Cor de fundo ao passar o mouse */
+    transform: translateY(-2px); /* Leve elevação ao passar o mouse */
+}
+
+/* Interatividade no lado esquerdo ao passar o mouse */
+.login-left:hover {
+    transform: scale(1.05); /* Leve aumento ao passar o mouse */
+}
+
+/* Estilização do lado direito da página de login */
+.login-right {
+    flex: 1; /* Ocupa 50% da largura da tela */
+    display: flex;
+    flex-direction: column; /* Organiza o conteúdo verticalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    padding: 20px; /* Espaçamento interno */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transições suaves */
+    border-left: 1px solid #e0e0e0; /* Borda esquerda para separação */
+}
+
+.forgot-password-link {
+margin: 15px;
+}
+/* Interatividade no lado direito ao passar o mouse */
+.login-right:hover {
+    transform: scale(1.03); /* Leve aumento ao passar o mouse */
+    box-shadow: 0 0 20px rgba(0, 115, 150, 0.3); /* Sombra ao passar o mouse */
+}
+
+/* Estilização do título de criar conta */
+.login-right h2 {
+    font-size: 28px; /* Tamanho do texto */
+    color: #007396; /* Cor do texto */
+    margin-bottom: 10px; /* Espaço abaixo do título */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilização do grupo de inputs */
+.input-group {
+    margin-bottom: 15px; /* Espaço abaixo de cada grupo de input */
+    max-width: 300px; /* Diminuindo a largura dos inputs */
+    width: 100%; /* Ocupa 100% da largura do grupo */
+    align-self: center; /* Centraliza o grupo de inputs */
+}
+
+/* Estilização dos inputs */
+.input-group input {
+    padding: 12px; /* Aumenta o padding para mais conforto */
+    border: 1px solid #ccc; /* Borda do input */
+    border-radius: 20px; /* Borda arredondada */
+    font-size: 14px; /* Tamanho da fonte */
+    width: 100%; /* Ocupa 100% da largura */
+    box-sizing: border-box; /* Inclui o padding no cálculo da largura */
+    transition: border-color 0.3s; /* Transição suave para a cor da borda */
+}
+
+/* Mudança na borda dos inputs ao focar */
+.input-group input:focus {
+    border-color: #007396; /* Cor da borda ao focar */
+    outline: none; /* Remove o contorno padrão */
+}
+
+/* Estilização dos rótulos dos inputs */
+.input-group label {
+    font-size: 14px; /* Tamanho da fonte do rótulo */
+    color: #007396; /* Cor do rótulo */
+    margin-bottom: 5px; /* Espaço abaixo do rótulo */
+    display: block; /* Exibe o rótulo como bloco */
+}
+
+/* Estilização do botão "Criar Conta" */
+.create-button {
+    padding: 10px 0; /* Ajuste o padding conforme necessário */
+    background-color: #007396; /* Cor de fundo do botão */
+    color: #ffffff; /* Cor do texto */
+    border: none; /* Sem borda */
+    border-radius: 20px; /* Borda arredondada */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+    cursor: pointer; /* Cursor em forma de mão */
+    width: 100%; /* Ocupa 100% da largura */
+    max-width: 200px; /* Largura máxima */
+    text-align: center; /* Centraliza o texto */
+    transition: background-color 0.3s, transform 0.3s; /* Transições suaves */
+}
+
+/* Botão "Criar Conta" com hover */
+.create-button:hover {
+    background-color: #005f73; /* Cor de fundo ao passar o mouse */
+    transform: translateY(-2px); /* Leve elevação ao passar o mouse */
+}
+
+/* Estilização da notificação de registro enviado */
+.notification {
+    color: #333; /* Cor do texto da notificação */
+    margin-top: 10px; /* Espaço acima da notificação */
+    font-size: 14px; /* Tamanho da fonte */
+    text-align: center; /* Centraliza o texto da notificação */
+}
+
+/* Estilização dos ícones dentro dos inputs */
+.input-icon {
+    margin-right: 10px; /* Espaço à direita do ícone */
+    color: #007396; /* Cor do ícone */
+    font-size: 20px; /* Tamanho do ícone */
+}
